@@ -2,7 +2,13 @@
     <head>
         <meta charset="UTF-8"/>
         <title>GET</title>
-      </head>
+	<script>
+  		setColour = function(val) {
+     			var e = document.getElementById("colours");
+    			document.body.style.backgroundColor = e.options[e.selectedIndex].value;
+  		}
+	</script>
+    </head>
     <body>
         <form role="search" method="get" id="searchform" class="searchform" action="http://www.google.co.uk/search?hl=en-GB&source=hp&q=">
             <label class="screen-reader-text" for="s"></label>
@@ -30,12 +36,11 @@
 	    <label for="myBrowser">Choose a colour from this list:</label>
 	    <br>
 	    <input list="colours" id="favColours" name="favColours" placeholder="Colour">
-	    <datalist id="colours">
-  	        <option value="Red"></option>
-  	        <option value="Green"></option>
-  	        <option value="Blue"></option>
-  	        <option value="Orange"></option>
-  	        <option value="Other"></option>
+	    <datalist id="colours" onchange="this.parentNode.style.backgroundColor = this.value">
+  	        <option value="red"></option>
+  	        <option value="green"></option>
+  	        <option value="blue"></option>
+  	        <option value="orange"></option>
 	    </datalist>
 	    <br><br>
     	    <input type="submit" value="Submit">
@@ -53,5 +58,19 @@
 	    </datalist>
 	    <input type="submit" value="Submit">
 	</form>
+	<br>
+	<p>Displaying location using Latitude and Longitude</p>
+ 
+    	<button class="location" onclick="getlocation()">Click Me</button>
+    	<p id="demo1"></p>
+    	<script>
+        	let variable1 = document.getElementById("demo1");
+        	function getlocation() {
+        	    navigator.geolocation.getCurrentPosition(showLoc);
+       	 	}
+       	 	function showLoc(pos) {
+            		variable1.innerHTML = "Latitude: " + pos.coords.latitude + "<br>Longitude: " + pos.coords.longitude;
+        	}
+    	</script>
     </body>
 </html>

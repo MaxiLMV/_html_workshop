@@ -4,9 +4,10 @@
         <title>GET</title>
       </head>
     <body>
-        <form method="get" action="www.google.com">
-            <input type="search" name="location" placeholder="Search.."/>
-            <input type="submit" value="Go"/>
+        <form role="search" method="get" id="searchform" class="searchform" action="http://www.google.co.uk/search?hl=en-GB&source=hp&q=">
+            <label class="screen-reader-text" for="s"></label>
+            <input type="text" value="" name="q" id="s" placeholder="Search..">
+            <input type="submit" value="GO">
         </form>
     </body>
 </html>

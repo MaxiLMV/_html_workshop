@@ -18,10 +18,20 @@
 	<br>
 	<form method="post">
             <input type="text" name="firstname" placeholder="First name">
-	        <br><br>
+	    <br><br>
     	    <input type="text" name="lastname" placeholder="Last name">
-	        <br><br>
+	    <br><br>
     	    <input type="submit" value="Submit">
         </form>
+	<br>
+	<label for="myBrowser">Choose a browser from this list:</label>
+	<input list="browsers" id="myBrowser" name="myBrowser">
+	<datalist id="browsers">
+  	    <option value="Google Chrome"></option>
+  	    <option value="Firefox"></option>
+  	    <option value="Opera"></option>
+  	    <option value="Brave"></option>
+  	    <option value="Microsoft Edge"></option>
+	</datalist>
     </body>
 </html>

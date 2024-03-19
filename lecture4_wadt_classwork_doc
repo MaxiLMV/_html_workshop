@@ -191,7 +191,9 @@
 			<p><span style="-aw-import:ignore">&#xa0;</span></p>
 			<p><span>Having the ability to perform calculations in your CSS allows you to do more, like convert pixel values into percentages. You'll have access to standard maths functions like addition, subtraction, multiplication and division. Of course, these functions can be combined to create complex calculations.</span></p>
 			<p><span style="-aw-import:ignore">&#xa0;</span></p>
-			<p><span>In addition, Sass includes a few built-in functions to help manipulate numbers. Functions like percentage(), floor() and round() to name a few.</span></p><p style="margin-bottom:10pt"><span style="-aw-import:ignore">&#xa0;</span></p><h2><span style="-aw-import:spaces">&#xa0;</span><span>Tammy Coron</span></h2><p style="margin-top:6pt"><span style="-aw-import:ignore">&#xa0;</span></p>
+			<p><span>In addition, Sass includes a few built-in functions to help manipulate numbers. Functions like percentage(), floor() and round() to name a few.</span></p><p style="margin-bottom:10pt"><span style="-aw-import:ignore">&#xa0;</span></p>
+			<h2><span>Tammy Coron</span></h2>
+			<p style="margin-top:6pt"><span style="-aw-import:ignore">&#xa0;</span></p>
 			<p><span style="font-weight:bold">Tammy is an independent creative professional and the host of Roundabout: Creative Chaos. She’s also the owner of Just Write Code, an independent production company located in West Tennessee. For more information about Tammy, visit her website by clicking the icons above. </span></p>
 		</div>
 		<script src="js/scripts.js"></script>

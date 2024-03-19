@@ -165,7 +165,7 @@
 			<p><span style="font-style:italic">Note: When importing partials, you don't need to include the file extension or the underscore.</span></p><p style="margin-bottom:12pt"></p>
 			<h1><span>Mixins</span></h1>
 			<p style="margin-top:6pt"></p>
-			<p><span style="font-weight:bold">One of the advantages of using preprocessors is their ability to take complex, long-winded code and simplify it. This is where mixins come in handy! </span></p>
+			<h3><span style="font-weight:bold">One of the advantages of using preprocessors is their ability to take complex, long-winded code and simplify it. This is where mixins come in handy! </span></h3>
 			<p></p>
 			<p><span>For example, if you need to include the vendor prefixes, you can use a mixin instead. Take a look at this example for border-radius:</span></p>
 			<p></p>
@@ -182,14 +182,17 @@
 			<p></p>
 			<p><span>Later, the @include directive is called, along with the mixin name (border-radius) and a parameter (10px). Thus .box { @include border-radius(10px); }.</span></p>
 			<p></p>
-			<p><span style="font-weight:bold">The following CSS is produced:</span></p>
+			<h3><span style="font-weight:bold">The following CSS is produced:</span></h3>
 			<p></p>
 			<p><span style="font-style:italic">.box {</span></p>
 			<p><span style="font-style:italic; -aw-import:spaces">&#xa0; </span><span style="font-style:italic">-webkit-border-radius: 10px;</span></p>
 			<p><span style="font-style:italic; -aw-import:spaces">&#xa0; </span><span style="font-style:italic">-moz-border-radius: 10px;</span></p>
 			<p><span style="font-style:italic; -aw-import:spaces">&#xa0; </span><span style="font-style:italic">-ms-border-radius: 10px;</span></p>
 			<p><span style="font-style:italic; -aw-import:spaces">&#xa0; </span><span style="font-style:italic">border-radius: 10px;</span></p>
-			<p><span style="font-style:italic">}</span></p><p style="margin-bottom:12pt"></p><h1><span>Extend/Inheritance</span></h1><p style="margin-top:6pt"></p>
+			<p><span style="font-style:italic">}</span></p>
+			<p style="margin-bottom:12pt"></p>
+			<h1><span>Extend/Inheritance</span></h1>
+			<p style="margin-top:6pt"></p>
 			<p><span>The @extend directive has been called one of Sass' most powerful features. After seeing it in action, it's clear why.</span></p>
 			<p></p>
 			<p><span>The idea is that with this directive you won't have to include multiple class names on your HTML elements and can keep your code DRY (don't repeat yourself). Your selectors can inherit the styles of other selectors, and then be easily extended when required. Now that's powerful.</span></p>
